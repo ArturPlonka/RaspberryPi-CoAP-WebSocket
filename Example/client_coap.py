@@ -9,7 +9,6 @@ from websocket import create_connection
 from ipaddress import ip_address
 
 class Agent():
-
     def __init__(self, protocol):
         self.protocol = protocol
         reactor.callLater(1, self.requestResource)
